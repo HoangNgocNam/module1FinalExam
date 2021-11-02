@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findnegativeInteger(string) {
+        let negativeInteger = ["a", "e", "i", "o", "u"];
+        let count = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (negativeInteger.indexOf(string[i]) !== -1) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return false;
+        }
+    }
+
+    let string = prompt("nhập vào một chuỗi :");
+    findnegativeInteger(string);
+    alert('Số kí tự nguyên âm ' + ' ' + findnegativeInteger(string));
+</script>
+</body>
+</html>

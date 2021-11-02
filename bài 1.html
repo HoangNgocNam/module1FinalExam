@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>equation</title>
+</head>
+<body>
+<!--giải phương trình bậc nhất ax + b = 0-->
+<script>
+    function firstDegreeEquation(a, b) {
+        if (a === 0 && b === 0) {
+            return document.write("phương trình có vô số nghiệm");
+        } else if (a === 0 && b !== 0) {
+            return document.write("phương trình vô nghiệm")
+        } else {
+            return (-b) / a
+        }
+    }
+
+    document.write(firstDegreeEquation(5, 8));
+</script>
+
+
+</body>
+</html>
